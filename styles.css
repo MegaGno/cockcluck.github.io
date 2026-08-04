@@ -149,16 +149,43 @@ p:last-child{ margin-bottom:0; }
 }
 
 @media (max-width:840px){
+
   .main-nav{
-    position:fixed; inset:76px 0 0 0;
-    background:linear-gradient(180deg, rgba(5,5,6,0.98), rgba(10,10,11,0.98));
-    flex-direction:column; align-items:flex-start; padding:24px 28px;
-    display:none; gap:0; border-top:1px solid rgba(242,237,228,0.18);
-    box-shadow:0 16px 30px rgba(0,0,0,0.55);
+    position:fixed;
+    inset:76px 0 0 0;
+
+    background:#000;          /* ดำสนิท */
+
+    flex-direction:column;
+    align-items:flex-start;
+    padding:24px 28px;
+    display:none;
+    gap:0;
+
+    border-top:none;          /* เอาเส้นด้านบนออก */
+    box-shadow:none;          /* เอาเงาออก */
   }
-  .main-nav.open{ display:flex; }
-  .main-nav a{ width:100%; padding:16px 0; border-bottom:1px solid rgba(242,237,228,0.12); }
-  .nav-toggle{ display:block; }
+
+  .main-nav.open{
+    display:flex;
+  }
+
+  .main-nav a{
+    width:100%;
+    padding:16px 0 16px 12px;
+
+    background:#000;          /* พื้นหลังแต่ละแถวดำ */
+    border-bottom:1px solid #111;
+  }
+
+  .main-nav a:hover,
+  .main-nav a[aria-current="page"]{
+    background:#111;          /* ตอน hover */
+  }
+
+  .nav-toggle{
+    display:block;
+  }
 }
 
 /* ---------- sections ---------- */
