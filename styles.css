@@ -404,3 +404,10 @@ section:last-of-type{ border-bottom:none; }
 /* ---------- utility ---------- */
 .mt-lg{ margin-top:56px; }
 .text-center{ text-align:center; margin-left:auto; margin-right:auto; }
+
+/* ---------- video ---------- */
+.video-container {
+  display: flex;
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center;     /* จัดกึ่งกลางแนวตั้ง (ถ้า div มีการกำหนดความสูง) */
+}

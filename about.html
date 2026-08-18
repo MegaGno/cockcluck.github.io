@@ -212,78 +212,33 @@
     <div class="grid grid-2">
 
       <div class="hud-card">
-        <div class="hud-head"><h3>Health Assessment</h3><span class="hud-tag">LIVE</span></div>
+        <div class="hud-head"><h3>Health Assessment + Breed Classification</h3><span class="hud-tag">LIVE</span></div>
         <div class="hud-body">
-          <p class="desc">Continuous, real-time monitoring of vital signs and condition throughout the match.</p>
-          <div class="gauge-row">
-            <div class="gauge" data-score="82">
-              <svg viewBox="0 0 80 80">
-                <circle cx="40" cy="40" r="34" stroke="var(--line-strong)" stroke-width="6" fill="none"/>
-                <circle class="gauge-fill" cx="40" cy="40" r="34" stroke="var(--gold)" stroke-width="6" fill="none" stroke-linecap="round" transform="rotate(-90 40 40)"/>
-              </svg>
-              <span class="gauge-score">82</span>
-            </div>
-            <div>
-              <div class="gauge-label">Health Score</div>
-              <div style="font-family:var(--mono); font-size:0.8rem; color:var(--ok);">Low Risk · Good</div>
-            </div>
+          <p class="desc">● Continuous, real-time monitoring of vital signs and condition throughout the match.</p>
+          <p class="desc">● The AI system analyzes the rooster's breed, age, and health status, providing veterinarians with real-time insights to ensure the animal's well-being.</p>
+          <div class="video-container">
+            <video width="480" height="270" controls autoplay muted loop>
+              <source src="cockcluck.github.io/videos/DemoAI_1.mp4" type="video/mp4">
+             
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div class="bar-list">
-            <div class="bar-row"><span class="b-label">HEART RATE</span><div class="bar-track"><div class="bar-fill" data-value="70"></div></div><span class="b-val">160bpm</span></div>
-            <div class="bar-row"><span class="b-label">STAMINA</span><div class="bar-track"><div class="bar-fill" data-value="85"></div></div><span class="b-val">85%</span></div>
-            <div class="bar-row"><span class="b-label">HYDRATION</span><div class="bar-track"><div class="bar-fill" data-value="78"></div></div><span class="b-val">78%</span></div>
-          </div>
+          
         </div>
       </div>
 
       <div class="hud-card">
-        <div class="hud-head"><h3>Strength &amp; Weakness Analysis</h3><span class="hud-tag">LIVE</span></div>
+        <div class="hud-head"><h3>Strength &amp; Weakness Analysis + Attack Accuracy Analysis</h3><span class="hud-tag">LIVE</span></div>
         <div class="hud-body">
-          <p class="desc">A side-by-side performance breakdown — attack power, speed, technique, and stamina.</p>
-          <div class="bar-list" style="margin-top:0;">
-            <div class="bar-row"><span class="b-label">ATTACK POWER</span><div class="bar-track"><div class="bar-fill crimson" data-value="88"></div></div><span class="b-val">88%</span></div>
-            <div class="bar-row"><span class="b-label">SPEED</span><div class="bar-track"><div class="bar-fill" data-value="64"></div></div><span class="b-val">64%</span></div>
-            <div class="bar-row"><span class="b-label">TECHNIQUE</span><div class="bar-track"><div class="bar-fill" data-value="76"></div></div><span class="b-val">76%</span></div>
-            <div class="bar-row"><span class="b-label">STAMINA</span><div class="bar-track"><div class="bar-fill" data-value="50"></div></div><span class="b-val">50%</span></div>
+          <p class="desc">● A side-by-side performance breakdown — attack power, speed, technique, and stamina.</p>
+          <p class="desc">● Frame-by-frame tracking of hit rate, attack type, and target-area accuracy.</p>
+          <div class="video-container">
+            <video width="480" height="270" controls autoplay muted loop>
+              <source src="cockcluck.github.io/videos/DemoAI_2.mp4" type="video/mp4">
+              
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <p style="margin-top:16px; font-family:var(--mono); font-size:0.75rem; color:var(--gold);">MATCHUP PROBABILITY — ID:1 60% / ID:2 40%</p>
-        </div>
-      </div>
-
-      <div class="hud-card">
-        <div class="hud-head"><h3>Breed Classification</h3><span class="hud-tag">AI</span></div>
-        <div class="hud-body">
-          <p class="desc">Automatic breed recognition from visual features, with a confidence score.</p>
-          <div class="gauge-row">
-            <div class="gauge" data-score="92">
-              <svg viewBox="0 0 80 80">
-                <circle cx="40" cy="40" r="34" stroke="var(--line-strong)" stroke-width="6" fill="none"/>
-                <circle class="gauge-fill" cx="40" cy="40" r="34" stroke="var(--gold)" stroke-width="6" fill="none" stroke-linecap="round" transform="rotate(-90 40 40)"/>
-              </svg>
-              <span class="gauge-score">92%</span>
-            </div>
-            <div>
-              <div class="gauge-label">Confidence Score</div>
-              <div style="font-family:var(--mono); font-size:0.8rem; color:var(--ink);">Predicted Breed: Pradu Hang Dam</div>
-            </div>
-          </div>
-          <div class="bar-list">
-            <div class="bar-row"><span class="b-label">HEAD SHAPE</span><div class="bar-track"><div class="bar-fill" data-value="95"></div></div><span class="b-val">Match</span></div>
-            <div class="bar-row"><span class="b-label">COMB TYPE</span><div class="bar-track"><div class="bar-fill" data-value="88"></div></div><span class="b-val">Match</span></div>
-            <div class="bar-row"><span class="b-label">FEATHER COLOR</span><div class="bar-track"><div class="bar-fill" data-value="90"></div></div><span class="b-val">Match</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hud-card">
-        <div class="hud-head"><h3>Attack Accuracy Analysis</h3><span class="hud-tag">LIVE</span></div>
-        <div class="hud-body">
-          <p class="desc">Frame-by-frame tracking of hit rate, attack type, and target-area accuracy.</p>
-          <div class="bar-list" style="margin-top:0;">
-            <div class="bar-row"><span class="b-label">HIT RATE (ID:1)</span><div class="bar-track"><div class="bar-fill crimson" data-value="71"></div></div><span class="b-val">71%</span></div>
-            <div class="bar-row"><span class="b-label">HIT RATE (ID:2)</span><div class="bar-track"><div class="bar-fill" data-value="48"></div></div><span class="b-val">48%</span></div>
-          </div>
-          <p style="margin-top:16px; font-family:var(--mono); font-size:0.75rem; color:var(--ink-faint);">TOTAL ATTACKS TRACKED — 208 · 125 SUCCESSFUL</p>
         </div>
       </div>
 

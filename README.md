@@ -8,4 +8,8 @@ This site is live at : https://megagno.github.io/cockcluck.github.io/
 
 about.html => overviews page
 
+contact.html => contact page
+
+index.html => home
+
 platform.html => slides page
