@@ -54,20 +54,21 @@
           <p>@limit321</p>
         </div>
 
-        <form class="mt-lg" style="max-width:420px;" onsubmit="return false;">
+        <form id="contact-form" action="https://formspree.io/f/mnparaej" method="POST" class="mt-lg" style="max-width:420px;">
           <div style="margin-bottom:16px;">
             <label style="display:block; font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; color:var(--ink-faint); margin-bottom:6px;">NAME</label>
-            <input type="text" style="width:100%; padding:12px 14px; background:var(--bg-raised); border:1px solid var(--line-strong); border-radius:2px; color:var(--ink); font-family:var(--body);">
+            <input type="text" name="name" required style="width:100%; padding:12px 14px; background:var(--bg-raised); border:1px solid var(--line-strong); border-radius:2px; color:var(--ink); font-family:var(--body);">
           </div>
           <div style="margin-bottom:16px;">
             <label style="display:block; font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; color:var(--ink-faint); margin-bottom:6px;">EMAIL</label>
-            <input type="email" style="width:100%; padding:12px 14px; background:var(--bg-raised); border:1px solid var(--line-strong); border-radius:2px; color:var(--ink); font-family:var(--body);">
+            <input type="email" name="email" required style="width:100%; padding:12px 14px; background:var(--bg-raised); border:1px solid var(--line-strong); border-radius:2px; color:var(--ink); font-family:var(--body);">
           </div>
           <div style="margin-bottom:20px;">
             <label style="display:block; font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; color:var(--ink-faint); margin-bottom:6px;">MESSAGE</label>
-            <textarea rows="4" style="width:100%; padding:12px 14px; background:var(--bg-raised); border:1px solid var(--line-strong); border-radius:2px; color:var(--ink); font-family:var(--body); resize:vertical;"></textarea>
+            <textarea name="message" rows="4" required style="width:100%; padding:12px 14px; background:var(--bg-raised); border:1px solid var(--line-strong); border-radius:2px; color:var(--ink); font-family:var(--body); resize:vertical;"></textarea>
           </div>
-          <button type="button" class="btn btn-primary" onclick="window.location.href='mailto:natthakorn@cockcluck.com'">Send Message</button>
+          <button id="submit-btn" type="submit" class="btn btn-primary">Send Message</button>
+            <p id="form-status" style="margin-top:15px; font-family:var(--mono); font-size:0.8rem;"></p>
         </form>
       </div>
 

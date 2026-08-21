@@ -70,3 +70,52 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const status = document.getElementById("form-status");
+    const submitBtn = document.getElementById("submit-btn");
+
+    const formData = new FormData(contactForm);
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "SENDING...";
+
+    status.textContent = "Sending message...";
+    status.style.color = "#aaa";
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        status.textContent = "Message sent successfully!";
+        status.style.color = "#03A96B";
+
+        contactForm.reset();
+      } else {
+        status.textContent = "Unable to send message. Please try again.";
+        status.style.color = "#e23b22";
+      }
+
+    } catch (error) {
+      status.textContent = "Something went wrong. Please try again.";
+      status.style.color = "#e23b22";
+
+      console.error(error);
+
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "SEND MESSAGE";
+    }
+  });
+}
